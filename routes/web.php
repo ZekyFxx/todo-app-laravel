@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Livewire\TaskController;
+
 Route::view('/', 'welcome');
 
-Route::view('dashboard', 'dashboard')
+Route::get('/dashboard', TaskController::class)
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
