@@ -59,7 +59,7 @@
 
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <h3>Author: {{ $task->author }}</h3>
-                    @if ($task->task_done) <strong>{{ $task->task_description }} ✅</strong>
+                    @if ($task->task_done) <del>{{ $task->task_description }}</del> ✅
                     @endif
                     
 
