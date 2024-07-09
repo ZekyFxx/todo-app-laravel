@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('author');
             $table->text('task_description');
+            $table->boolean('task_done')->default(0);
             $table->timestamps();
         });
     }
